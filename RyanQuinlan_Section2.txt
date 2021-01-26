@@ -1,0 +1,142 @@
+1)
+C:\Users\ryans>docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+0e03bdcc26d7: Pull complete
+Digest: sha256:31b9c7d48790f0d8c50ab433d9c3b7e17666d6993084c002c2ff1ca09b96391d
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+_____________________________________________________________________
+
+2)
+C:\Users\ryans>docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS                      PORTS                NAMES
+32b9477261c7   hello-world         "/hello"                 19 seconds ago   Exited (0) 17 seconds ago                        condescending_jackson
+54f6de9f6849   docker101tutorial   "/docker-entrypoint.…"   3 minutes ago    Up 3 minutes                0.0.0.0:80->80/tcp   docker-tutorial
+d0680f3970ee   alpine/git          "git clone https://g…"   8 minutes ago    Exited (0) 8 minutes ago                         repo
+_________________________________________________________________
+
+3)
+C:\Users\ryans>docker rm 32b9477261c7
+32b9477261c7
+
+C:\Users\ryans>docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED         STATUS                     PORTS                NAMES
+54f6de9f6849   docker101tutorial   "/docker-entrypoint.…"   3 minutes ago   Up 3 minutes               0.0.0.0:80->80/tcp   docker-tutorial
+d0680f3970ee   alpine/git          "git clone https://g…"   9 minutes ago   Exited (0) 9 minutes ago                        repo
+
+C:\Users\ryans>docker rm 54f6de9f6849
+Error response from daemon: You cannot remove a running container 54f6de9f6849ed29b0be3b501e345538ab799b7beee779e2ba43016268e241aa. Stop the container before attempting removal or force remove
+____________________________________________________________________
+
+4)
+C:\Users\ryans>docker run --rm hello-world
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+
+C:\Users\ryans>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+__________________________________________________________________________
+
+5)
+C:\Users\ryans>docker run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+83ee3a23efb7: Pull complete
+db98fc6f11f0: Pull complete
+f611acd52c6c: Pull complete
+Digest: sha256:703218c0465075f4425e58fac086e09e1de5c340b12976ab9eb8ad26615c3715
+Status: Downloaded newer image for ubuntu:latest
+root@cd26e09e1d78:/# exit
+exit
+
+C:\Users\ryans>docker ps -a
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS                      PORTS                NAMES
+cd26e09e1d78   ubuntu              "bash"                   39 seconds ago   Exited (0) 5 seconds ago                         trusting_gates
+54f6de9f6849   docker101tutorial   "/docker-entrypoint.…"   6 minutes ago    Up 6 minutes                0.0.0.0:80->80/tcp   docker-tutorial
+d0680f3970ee   alpine/git          "git clone https://g…"   11 minutes ago   Exited (0) 11 minutes ago                        repo
+
+C:\Users\ryans>docker rm cd26e09e1d78
+cd26e09e1d78
+
+C:\Users\ryans>docker rm 54f6de9f6849
+Error response from daemon: You cannot remove a running container 54f6de9f6849ed29b0be3b501e345538ab799b7beee779e2ba43016268e241aa. Stop the container before attempting removal or force remove
+
+C:\Users\ryans>docker rm d0680f3970ee
+d0680f3970ee
+
+C:\Users\ryans>docker stop
+"docker stop" requires at least 1 argument.
+See 'docker stop --help'.
+
+Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
+
+Stop one or more running containers
+
+C:\Users\ryans>docker stop 54f6de9f6849
+54f6de9f6849
+
+C:\Users\ryans>docker rm 54f6de9f6849
+54f6de9f6849
+
+C:\Users\ryans>docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\ryans>docker run -dt ubuntu bash
+33e13ba5f9e0c4df3bc01f525494ceefa0641084ef470c205711b5ba98a48e08
+
+C:\Users\ryans>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS         PORTS     NAMES
+33e13ba5f9e0   ubuntu    "bash"    10 seconds ago   Up 9 seconds             xenodochial_galileo
+
+C:\Users\ryans>docker rm 33e13ba5f9e0
+Error response from daemon: You cannot remove a running container 33e13ba5f9e0c4df3bc01f525494ceefa0641084ef470c205711b5ba98a48e08. Stop the container before attempting removal or force remove
+
+C:\Users\ryans>docker rm -f 33e13ba5f9e0
+33e13ba5f9e0
+
+C:\Users\ryans>docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+C:\Users\ryans>
