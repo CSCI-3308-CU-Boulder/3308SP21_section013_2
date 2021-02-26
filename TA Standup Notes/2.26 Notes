@@ -1,0 +1,10 @@
+-Front end interacting with backend directly is not the right design
+-Only use node.js to work for backend 
+-Have an endpoint on node.js to return to parameters to the map
+-Do not use PHP for client side integration, use node.js
+-Database password is exposed in PHP, PHP is totally outdated language
+-Map only needs data points, retrieve them through node.js
+-Node.js is a middle man between frontend and database in MySQL
+-Citing the code, link is good enough
+-Any baseline code, show the code in there for tutorials we have used 
+-Apply social aspect to our project
