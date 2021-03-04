@@ -42,8 +42,7 @@
 }
 
 body{
-    background-color: gray;
-    height: 100vh;
+    background-image: url("green_gradient.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -57,7 +56,6 @@ body{
 .form{
     position: relative;
     z-index:1;
-    background-color: blue;
     max-width: 360px;
     margin: 0 auto 100px;
     padding: 45px;
@@ -65,12 +63,15 @@ body{
 }
 
 .form input{
+    display: inline-block;
     outline: 1;
     background-color: lightgray;
     border: 0;
     width: 100%;
     padding: 10px;
     margin: 0 0 10px;
+    vertical-align: middle;
+
 
 }
 
