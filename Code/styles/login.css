@@ -47,6 +47,9 @@ body{
     background-position: center;
 }
 
+.container{
+    padding-top: 100px;
+}
 
 .form{
     position: relative;
@@ -106,3 +109,13 @@ body{
     margin-bottom: 15px;
     width:100%;
 }
+
+
+.card {
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 65%;
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+  }

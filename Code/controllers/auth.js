@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const email_regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const pw_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+const { promisify } = require('util');
 
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
@@ -60,7 +61,6 @@ exports.register = (req, res) => {
     
 }
 
-
 exports.login = async (req, res) => {
     try {
         const email = req.body.email;
@@ -89,7 +89,7 @@ exports.login = async (req, res) => {
                 }
 
                 res.cookie('jwt', token, cookieOptions);
-                res.status(200).redirect("/");
+                res.status(200).redirect("/profile");
 
             }
         })
@@ -98,3 +98,39 @@ exports.login = async (req, res) => {
         console.log(error);
     }
 } 
+
+exports.isLoggedIn = async (req, res, next) => {
+    console.log(req.cookies);
+    if(req.cookies.jwt){
+        try {
+            const decoded = await promisify(jwt.verify)(req.cookies.jwt, process.env.JWT_SECRET);
+
+            console.log(decoded);
+
+            db.query('SELECT * FROM users WHERE id = ?', [decoded.id], (error, result) => {
+                console.log(result);
+
+                if(!result){
+                    return next();
+                }
+
+                req.user = result[0];
+
+                return next();
+            });
+        } catch (error) {
+            return next();
+        }
+    } else{
+        next();
+    }
+}
+
+exports.logout= async (req, res) => {    
+    res.cookie('jwt', 'logout', {
+        expires: new Date(Date.now() + 2),
+        httpOnly: true
+    })
+
+    res.status(200).redirect('/');
+}

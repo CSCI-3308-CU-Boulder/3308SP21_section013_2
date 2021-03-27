@@ -41,9 +41,7 @@ let createTable = "CREATE TABLE IF NOT EXISTS users (id int(11) NOT NULL AUTO_IN
 db.query(createTable, function(error, results) {
     if(error){
         console.log(error);
-    } else{
-        console.log("Table created")
-    }
+    } 
 })
 
 app.use('/', require('./routes/pages'));

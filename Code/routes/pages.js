@@ -1,5 +1,5 @@
 const express = require("express");
-
+const authController = require('../controllers/auth');
 const router = express.Router();
 
 
@@ -11,8 +11,13 @@ router.get('/register', (req, res) => {
     res.render('register', {message: '', successMessage: ''});
 })
 
-router.get('/login', (req, res) => {
-    res.render('login', {message: '', successMessage: ''});
+router.get('/login', authController.isLoggedIn, (req, res) => {
+    if(req.user){
+        res.redirect('/profile');
+    } else{
+        res.render('login', {message: '', successMessage: ''});
+    }
+    
 })
 
 router.get('/contact', (req, res) => {
@@ -29,6 +34,17 @@ router.get('/index', (req, res) => {
 
 router.get('/resources', (req, res) => {
     res.render('resources');
+})
+
+router.get('/profile', authController.isLoggedIn, (req, res) => {
+    if(req.user){
+        res.render('profile', {
+            user: req.user
+        });
+    } else{
+        res.redirect('/login');
+    }
+    
 })
 
 
