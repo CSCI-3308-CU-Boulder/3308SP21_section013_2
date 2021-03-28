@@ -43,11 +43,57 @@
                 // add marker to the map
                 marker = L.marker([lat, lon]).addTo(map);
                 // add popup to the marker
-                marker.bindPopup("<b>Boulder</b><br />Colorado").openPopup();
+                marker.bindPopup("<b>Boulder</b><br />Colorado");
+                marker.on ('mouseover', function(event) {
+                    this.openPopup();
+                });
+                marker.on ('mouseout', function(event) {
+                    this.closePopup();
+                });
                 // add second marker to the map
-                marker2 = L.marker([40.000, -105.214]).addTo(map);
+                marker2 = new L.marker([40.000, -105.214]).addTo(map);
                 // add popup for that marker
-                marker2.bindPopup("<b>Bobolink</b><br />Dogs: Mixed <br />Parking Fees: No").openPopup();
+                marker2.bindPopup("<b>Bobolink</b><br />Dogs: Mixed <br />Parking Fees: No");
+                // marker2.bindPopup("<img src="" alt="Trail Photo">")
+                marker2.on ('mouseover', function(event) {
+                    this.openPopup();
+                });
+                marker2.on ('mouseout', function(event) {
+                    this.closePopup();
+                });
+                // add third marker to the map
+                marker3 = new L.marker([40.050, -105.282]).addTo(map);
+                // add popup for that marker
+                marker3.bindPopup("<b>Wonderland Lake</b><br />Dogs: Leash <br />Parking Fees: No");
+                // marker2.bindPopup("<img src="" alt="Trail Photo">")
+                marker3.on ('mouseover', function(event) {
+                    this.openPopup();
+                });
+                marker3.on ('mouseout', function(event) {
+                    this.closePopup();
+                });
+                // add fourth marker to the map
+                marker4 = new L.marker([40.005, -105.406]).addTo(map);
+                // add popup for that marker
+                marker4.bindPopup("<b>Boulder Falls</b><br />Dogs: Leash <br />Parking Fees: No");
+                // marker2.bindPopup("<img src="" alt="Trail Photo">")
+                marker4.on ('mouseover', function(event) {
+                    this.openPopup();
+                });
+                marker4.on ('mouseout', function(event) {
+                    this.closePopup();
+                });
+                // add fifth marker to the map
+                marker5 = new L.marker([40.070, -105.282]).addTo(map);
+                // add popup for that marker
+                marker5.bindPopup("<b>Foothills</b><br />Dogs: Mixed <br />Parking Fees: No");
+                // marker2.bindPopup("<img src="" alt="Trail Photo">")
+                marker5.on ('mouseover', function(event) {
+                    this.openPopup();
+                });
+                marker5.on ('mouseout', function(event) {
+                    this.closePopup();
+                });
             </script>
             
     </header>
