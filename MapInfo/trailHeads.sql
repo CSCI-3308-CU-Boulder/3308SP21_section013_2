@@ -1,6 +1,6 @@
 
 DROP TABLE IF EXISTS markers CASCADE;
-CREATE TABLE `markers` (
+CREATE TABLE IF NOT EXISTS `markers` (
   `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   `trailhead` VARCHAR( 60 ) NOT NULL ,
   `restroom` VARCHAR( 80 ) NOT NULL ,
