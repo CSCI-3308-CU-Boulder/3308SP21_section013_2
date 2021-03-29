@@ -53,7 +53,7 @@ exports.register = (req, res) => {
             if(error){
                 console.log(error);
             } else{
-                return res.render('register', {message: '', successMessage: "User registered"})
+                return res.redirect('/login');
             }
         })
     })
