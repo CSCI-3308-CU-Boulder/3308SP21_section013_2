@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS parkMark (
    bikePath VARCHAR(80) NOT NULL ,
   lat FLOAT(10, 6) NOT NULL ,
   lng FLOAT(10, 6) NOT NULL
-) ENGINE = MYISAM;
+);
 
 INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng ) VALUES(1,'Admiral Areligh A Burke Park','yes', 'no', 'no', 'no','no', 'no', 'no', 'no', '39.995039789336325', ' -105.23655675793312');
 INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng ) VALUES(2,'Andrews Aboratoreum', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'yes', '40.012671862512036', ' -105.27730166035434');
