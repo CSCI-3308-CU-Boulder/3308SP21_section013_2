@@ -100,15 +100,12 @@ exports.login = async (req, res) => {
 } 
 
 exports.isLoggedIn = async (req, res, next) => {
-    console.log(req.cookies);
     if(req.cookies.jwt){
         try {
             const decoded = await promisify(jwt.verify)(req.cookies.jwt, process.env.JWT_SECRET);
 
-            console.log(decoded);
 
             db.query('SELECT * FROM users WHERE id = ?', [decoded.id], (error, result) => {
-                console.log(result);
 
                 if(!result){
                     return next();
@@ -116,6 +113,14 @@ exports.isLoggedIn = async (req, res, next) => {
 
                 req.user = result[0];
 
+            });
+
+            db.query('SELECT * FROM profiles WHERE id = ?', [decoded.id], (error, result) => {
+                if(!result){
+                    return next();
+                }
+
+                req.profile = result[0];
                 return next();
             });
         } catch (error) {

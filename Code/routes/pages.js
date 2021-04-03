@@ -70,8 +70,25 @@ router.get('/resources', (req, res) => {
 })
 
 router.get('/profile', authController.isLoggedIn, (req, res) => {
-    if(req.user){
+    if(req.user && req.profile){
         res.render('profile', {
+            user: req.user,
+            profile: req.profile
+        });
+    } else if(req.user){
+        res.render('profile', {
+            user: req.user,
+            profile: ''
+        });
+    } else{
+        res.redirect('/login');
+    }
+    
+})
+
+router.get('/editProfile', authController.isLoggedIn, (req, res) => {
+    if(req.user){
+        res.render('editProfile', {
             user: req.user
         });
     } else{
@@ -80,5 +97,57 @@ router.get('/profile', authController.isLoggedIn, (req, res) => {
     
 })
 
+router.post('/profile', authController.isLoggedIn, (req, res) => {
+    var addProfile = 'insert into profiles values (';
+    addProfile += req.user.id;
+    addProfile += ', "';
+    addProfile += req.body.shortBio;
+    addProfile += '", "'; 
+    addProfile += req.body.fullBio;
+    addProfile += '", "'; 
+    addProfile += req.user.username;
+    addProfile += '", "'; 
+    addProfile += req.user.email;
+    addProfile += '");';
+
+    
+    db.query("delete from profiles where id = " + req.user.id + ";");
+
+    db.query(addProfile, (error, results) =>{
+        if(error){
+            console.log(error);
+        }
+    })
+    if(req.user){
+        res.redirect('/profile');
+    } else{
+        res.redirect('/login');
+    }
+})
+
+router.get('/browseProfiles', (req, res) => {
+        res.render('profileCards', {
+    });
+})
+
+router.get('/profiles', authController.isLoggedIn, (req, res) => {
+   async function userQuery(){
+        return new Promise((resolve,reject)=>{
+            db.query('select * from profiles', function(error,results,field){
+                    resolve(results);
+            });
+
+        })
+    }
+
+    async function resolveQueries(){
+        let profiles = await userQuery();
+        res.json(profiles);
+        
+    }
+
+    resolveQueries();
+    
+})
 
 module.exports = router;
