@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS markers (
   dogs VARCHAR( 80 ) NOT NULL ,
   lat FLOAT( 10, 6 ) NOT NULL ,
   lng FLOAT( 10, 6 ) NOT NULL
-) ENGINE = MYISAM ;
+);
 
 
 
