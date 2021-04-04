@@ -15,9 +15,9 @@ CREATE TABLE IF NOT EXISTS parkMark (
   lng FLOAT(10, 6) NOT NULL
 );
 
-INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng ) VALUES(1,'Admiral Areligh A Burke Park','yes', 'no', 'no', 'no','no', 'no', 'no', 'no', '39.995039789336325', ' -105.23655675793312');
+INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng ) VALUES(1,'Admiral Areligh A Burke Park','yes', 'no', 'no', 'no','no', 'no', 'no', 'no', 'no', '39.995039789336325', ' -105.23655675793312');
 INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng ) VALUES(2,'Andrews Aboratoreum', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'yes', 'yes', '40.012671862512036', ' -105.27730166035434');
-INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng ) VALUES(3,'Ann Armstrong Park', 'no', 'no', 'no', 'no', 'no', 'no', 'no','no','no' '40.02566711292958', ' -105.27503177199578');
+INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng ) VALUES(3,'Ann Armstrong Park', 'no', 'no', 'no', 'no', 'no', 'no', 'no','no','no', '40.02566711292958', ' -105.27503177199578');
 INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng ) VALUES(4, 'Arapahoe Ridge Park', 'yes', 'yes', 'no', 'yes', 'yes', 'no', 'no','yes','no', '40.00933316763496', '-105.23246451802609' );
 INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng )VALUES(5,'Arrowwood Park', 'no', 'yes', 'no', 'no', 'no','no', 'no', 'yes', 'yes', '40.002961466214494','-105.25193664501147');
 INSERT INTO parkMark(id,name,picnicShelter,playground,restroom,sportsField,tennis, basketball,volleyball,rtd,bikePath,lat,lng )VALUES(6, 'Aurora 7 Park', 'yes', 'no', 'no', 'yes', 'no','no', 'no', 'yes', 'yes', '40.00551013226976', '-105.24475681802618');
