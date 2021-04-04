@@ -150,4 +150,45 @@ router.get('/profiles', authController.isLoggedIn, (req, res) => {
     
 })
 
+router.get('/mapData',  (req, res) => {
+    async function userQuery(){
+         return new Promise((resolve,reject)=>{
+             db.query('select * from markers', function(error,results,field){
+                     resolve(results);
+             });
+ 
+         })
+     }
+ 
+     async function resolveQueries(){
+         let data = await userQuery();
+         console.log(data);
+         res.json(data);
+         
+     }
+ 
+     resolveQueries();
+     
+ })
+
+ router.get('/parkData',  (req, res) => {
+    async function userQuery(){
+         return new Promise((resolve,reject)=>{
+             db.query('select * from parkmark', function(error,results,field){
+                     resolve(results);
+             });
+ 
+         })
+     }
+ 
+     async function resolveQueries(){
+         let data = await userQuery();
+         res.json(data);
+         
+     }
+ 
+     resolveQueries();
+     
+ })
+
 module.exports = router;
