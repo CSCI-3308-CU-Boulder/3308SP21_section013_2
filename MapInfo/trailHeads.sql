@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS markers (
   bikes VARCHAR( 80 ) NOT NULL ,
   dogs VARCHAR( 80 ) NOT NULL ,
   lat FLOAT( 10, 6 ) NOT NULL ,
-  lng FLOAT( 10, 6 ) NOT NULL
+  lng FLOAT( 10, 6 ) NOT NULL,
+  img VARCHAR(1000) NOT NULL
 );
 
 
