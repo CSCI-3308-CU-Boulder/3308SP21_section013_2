@@ -14,13 +14,16 @@ CREATE TABLE IF NOT EXISTS markers (
 
 
 
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('1','Bobolink','No','No','Yes','Mixed(VS&Prohibited)','40.000235125376086','-105.21451812328385');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('2','Boulder Falls','No','No','No','Leash','40.00536252781466','-105.40614997299188');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('3', 'Boulder Valley Ranch','Yes','No', 'Yes', 'Voice and Sight', '40.08000101506319','-105.26279258989399');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('4', 'Buckingham Park', 'Yes','No','No', 'Leash', '40.11123918476268','-105.30816306035054');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('5','Centennial Park','Yes','No','No','Voice and Sight','40.02021082644039',' -105.29791738733917');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('6','Chapman Drive', 'No','No','Yes','Leash','40.00892966872375','-105.32530989661622');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('7','Chatauqua Meadow','Yes','No','No','Voice and Sight','39.996092683577075','-105.28621496035497');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('1','Bobolink','No','No','Yes','Mixed(VS&Prohibited)','40.000235125376086','-105.21451812328385', 'https://cdn2.apstatic.com/photos/hike/7018028_smallMed_1554830224.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('2','Boulder Falls','No','No','No','Leash','40.00536252781466','-105.40614997299188', 'https://media-cdn.tripadvisor.com/media/photo-s/17/f3/d0/05/photo0jpg.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('3', 'Boulder Valley Ranch','Yes','No', 'Yes', 'Voice and Sight', '40.08000101506319','-105.26279258989399', 'https://cdn2.apstatic.com/photos/hike/7003610_medium_1554234659.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('4', 'Buckingham Park', 'Yes','No','No', 'Leash', '40.11123918476268','-105.30816306035054', 'https://s3-media0.fl.yelpcdn.com/bphoto/JVqzg2TL5Vv84b0J23XYOg/l.jpg
+');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('5','Centennial Park','Yes','No','No','Voice and Sight','40.02021082644039',' -105.29791738733917', 'https://boulderrealestatenews.com/wp-content/uploads/2013/09/centennial-trailhead-redrocks-view.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('6','Chapman Drive', 'No','No','Yes','Leash','40.00892966872375','-105.32530989661622', 'https://farm1.static.flickr.com/916/42320128365_f194deae12.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('7','Chatauqua Meadow','Yes','No','No','Voice and Sight','39.996092683577075','-105.28621496035497', '
+7.
+');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('8','Cherryvale','No','No','Yes','Mixed(V&S and prohibited)','39.982896208535216','-105.21448851617642');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('9','Cottonwood','No','No','Yes', 'Mixed(V&S and prohibited)','40.04011567225499','-105.23697976035331');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img)VALUES('10','Crown Rock','No','Yes','No','Voice and Sight','40.00193869459783',' -105.29696481617573');
