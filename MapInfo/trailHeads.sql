@@ -21,17 +21,15 @@ INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) V
 ');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('5','Centennial Park','Yes','No','No','Voice and Sight','40.02021082644039',' -105.29791738733917', 'https://boulderrealestatenews.com/wp-content/uploads/2013/09/centennial-trailhead-redrocks-view.jpg');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('6','Chapman Drive', 'No','No','Yes','Leash','40.00892966872375','-105.32530989661622', 'https://farm1.static.flickr.com/916/42320128365_f194deae12.jpg');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('7','Chatauqua Meadow','Yes','No','No','Voice and Sight','39.996092683577075','-105.28621496035497', '
-7.
-');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('8','Cherryvale','No','No','Yes','Mixed(V&S and prohibited)','39.982896208535216','-105.21448851617642');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('9','Cottonwood','No','No','Yes', 'Mixed(V&S and prohibited)','40.04011567225499','-105.23697976035331');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img)VALUES('10','Crown Rock','No','Yes','No','Voice and Sight','40.00193869459783',' -105.29696481617573');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('11','Doudy Draw','Yes','Yes','Yes','Mixed(all 3)','39.938175172561856','-105.25657851802885');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('12','Dry Creek','Yes','No','Yes','Voice and Sight','39.99984942368107','-105.19103308734');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('13','Eagle','No','No','Yes','Voice and Sight','40.080432661119104','-105.23590469288878');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('14','Enchanted Mesa','No','No','No','Mixed(V&S and prohibited)','39.9973533848808','-105.2802256045339');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('15','Flagstaff Summit','Yes','Yes','No','Mixed (all 3)','40.00151660957012','-105.29933651656641');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('7','Chatauqua Meadow','Yes','No','No','Voice and Sight','39.996092683577075','-105.28621496035497', 'https://yourboulder.com/wp-content/uploads/2015/03/IMG_4914.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('8','Cherryvale','No','No','Yes','Mixed(V&S and prohibited)','39.982896208535216','-105.21448851617642', 'https://goodacre-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/Aerial-6.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('9','Cottonwood','No','No','Yes', 'Mixed(V&S and prohibited)','40.04011567225499','-105.23697976035331', 'https://live.staticflickr.com/4626/40300483071_39f346b43f_b.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img)VALUES('10','Crown Rock','No','Yes','No','Voice and Sight','40.00193869459783',' -105.29696481617573', 'https://www.thomasmangan.com/images/xl/BoulderFlatirons2.2.14.4.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('11','Doudy Draw','Yes','Yes','Yes','Mixed(all 3)','39.938175172561856','-105.25657851802885', 'https://static.rootsrated.com/image/upload/s--GSaqQDXP--/t_rr_large_natural/yfq7nvf34f8juvfokxju.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('12','Dry Creek','Yes','No','Yes','Voice and Sight','39.99984942368107','-105.19103308734', 'https://www.boulderrealestatenews.com/wp-content/uploads/2013/09/IMG_2293-Custom.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('13','Eagle','No','No','Yes','Voice and Sight','40.080432661119104','-105.23590469288878','http://www.gohikecolorado.com/uploads/4/5/8/0/45804541/3794944.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('14','Enchanted Mesa','No','No','No','Mixed(V&S and prohibited)','39.9973533848808','-105.2802256045339','https://dayhikesneardenver.com/wp-content/uploads/2015/05/enchanted-mesa-header.jpg');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('15','Flagstaff Summit','Yes','Yes','No','Mixed (all 3)','40.00151660957012','-105.29933651656641',);
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('16','Flatirons Vista','Yes','Yes','Yes','Mixed (all 3)','39.92275296002896','-105.2458540180294');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('17','Foothills','No','No','Mixed','Mixed(V&S and prohibited)','40.07054703353091','-105.28264288521758');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('18','Four-Mile Creek','No','No','Mixed','Leash','40.06480074853652','-105.28776978718837');
