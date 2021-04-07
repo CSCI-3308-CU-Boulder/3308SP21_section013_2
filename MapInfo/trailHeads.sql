@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS markers (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
   trailhead VARCHAR( 60 ) NOT NULL ,
   restroom VARCHAR( 80 ) NOT NULL ,
-  fee VARCHAR( 80 ) NOT NULL ,
+  fees VARCHAR( 80 ) NOT NULL ,
   bikes VARCHAR( 80 ) NOT NULL ,
   dogs VARCHAR( 80 ) NOT NULL ,
   lat FLOAT( 10, 6 ) NOT NULL ,
@@ -37,7 +37,7 @@ INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) V
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('20','Gregory Canyon','Yes','Yes','No','Mixed(all 3)', '39.99776783181083','-105.29276024686237', 'https://yourboulder.com/wp-content/uploads/2016/06/IMG_1956-e1465998736360.jpg');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('21','Interim Joder','No','No','Yes','Leash','40.110304139666866','-105.28275206035056', 'https://cdn.5280.com/2016/04/joder-960x720.jpg');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('22','Left Hand','No','No','Yes','Leash','40.10534764978167','-105.26581401802234', 'https://www.fredswildflowers.com/uploads/2/5/6/3/25638840/lef-h-t-1-1_orig.jpg');
-INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('23','Marshall Mesa','Yes','Yes','Yes','Voice and Sight','39.95317284085238','-105.23134761802824'. 'https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/a/72/a727aa3c-c51c-11e9-9290-eb95b3be8fce/5d5efd068cf49.image.jpg?resize=1200%2C900');
+INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('23','Marshall Mesa','Yes','Yes','Yes','Voice and Sight','39.95317284085238','-105.23134761802824', 'https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/a/72/a727aa3c-c51c-11e9-9290-eb95b3be8fce/5d5efd068cf49.image.jpg?resize=1200%2C900');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('24','Mount Sanitas','Yes','No','No','Voice and Sight','40.02738749605658','-105.30068277384632', 'https://static.rootsrated.com/image/upload/s--8whFYyKx--/t_rr_large_natural/ptspvybekvttfkqgsw3i.jpg');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('25','NCAR','Yes','No','No','Mixed(V&S and Leash)','39.97794040800962','-105.27980990083337', 'https://etbtravelphotography.com/wp-content/uploads/2019/03/etbtravelphotography-1015104-2.jpg');
 INSERT INTO markers (id, trailhead, restroom, fees,bikes, dogs, lat, lng, img) VALUES('26','Panorama Point','Yes','Yes','No','Voice and Sight','40.00602810273934','-105.2926315709399', 'https://s3.amazonaws.com/ClubExpressClubFiles/49703/graphics/Photo_58536920.JPG');
