@@ -162,7 +162,6 @@ router.get('/mapData',  (req, res) => {
  
      async function resolveQueries(){
          let data = await userQuery();
-         console.log(data);
          res.json(data);
          
      }
