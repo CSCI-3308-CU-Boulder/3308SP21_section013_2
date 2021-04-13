@@ -9,7 +9,7 @@ The backend handling of data processing and the like will be handled by JavaScri
 How to host this site locally:
 
 
-Here is our attempt at hosting this site on Heroku:
+Here is our attempt at hosting this site on Heroku, it is NOT working at this point:
 https://github.com/mjk7817/Boulder-Nature-Guides
 
 
