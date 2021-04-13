@@ -17,3 +17,15 @@ https://github.com/mjk7817/Boulder-Nature-Guides
 https://boulder-nature-guides.herokuapp.com/index
 
 The challenges we ran into were getting the map to display and having the routing appropriately work. We are also having issues with getting the login page & registration page to work on Heroku. We have a long way to go before this site is fully functional on Heroku.  These are challenges we are hoping to address after this class so that people can have access to our work permentantly rather than trying to run the site locally 
+
+Directions for hosting locally:
+-Download the code and MapInfo folders from the repo
+-Download nodejs
+-Run "npm install bcryptjs connect-flash cookie-parser dotenv ejs express express-session jsonwebtoken mysql nodemon passport passport-local pg pg-promise" from terminal (in the code folder)
+-Download XAMPP (for hosting the database) from the following link: https://www.apachefriends.org/download.html
+-Open the XAMPP control panel and click start next to apache and mysql
+-go to http://localhost/phpmyadmin/ and create a database (the name of the database doesn't matter)
+-click the sql tab at the top, copy paste the code from "parks.sql" in the MapInfo folder, and hit "go"
+-do the same for trailHeads.sql
+-run "npm start" in your termianl (again, in the code folder)
+-go to http://localhost:5000/ and you should see the fully functioning website
