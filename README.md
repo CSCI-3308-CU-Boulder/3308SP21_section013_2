@@ -11,5 +11,6 @@ How to host this site locally:
 
 Here is our attempt at hosting this site on Heroku:
 https://github.com/mjk7817/Boulder-Nature-Guides
+https://boulder-nature-guides.herokuapp.com/index
 
-The challenges we ran into were getting the map to display and having the routing appropriately work. These are challenges we are hoping to address after this class so that people can have access to our work permentantly rather than trying to run the site locally 
+The challenges we ran into were getting the map to display and having the routing appropriately work. We are also having issues with getting the login page & registration page to work on Heroku. We have a long way to go before this site is fully functional on Heroku.  These are challenges we are hoping to address after this class so that people can have access to our work permentantly rather than trying to run the site locally 
