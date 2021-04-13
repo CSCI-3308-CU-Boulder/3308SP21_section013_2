@@ -5,3 +5,5 @@ in an easy to navigate interactive map. Users can filter what they see, and save
 
 The basic layout of the website (GUI) will be written in HTML and CSS. 
 The backend handling of data processing and the like will be handled by JavaScript programs. It will be on node.js and will interact with a database.
+
+How to host this site locally:
