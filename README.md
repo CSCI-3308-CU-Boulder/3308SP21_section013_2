@@ -17,7 +17,7 @@ How to host this site locally:
 
 -Open the XAMPP control panel and click start next to apache and mysql
 
--go to http://localhost/phpmyadmin/ and create a database (the name of the database doesn't matter)
+-go to http://localhost/phpmyadmin/ and create a database (if you name it anything other than "database", update the .env file in code folder)
 
 -click the sql tab at the top, copy paste the code from "parks.sql" in the MapInfo folder, and hit "go"
 
