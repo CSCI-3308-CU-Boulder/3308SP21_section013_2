@@ -7,6 +7,28 @@ Users can also log in to make a profile and connect with other hikers and park g
 The basic layout of the website (GUI) will be written in HTML and CSS. 
 The backend handling of data processing and the like will be handled by JavaScript programs. It will be on node.js and will interact with a database.
 
+
+Repo structure:
+
+Code folder contains all code used in the site
+
+Other folders contain miscellaneous administrative work such as TA notes and spreadsheets with map information
+
+Within the code folder:
+
+controllers contains the "auth controller" file with middleware used for the login system
+
+routes contains pages.js, which has all get and post requests for normal functionality, and auth.js, which contains get and post requests used for login and registration authorization
+
+styles contains all css and images used in the website
+
+views contains all ejs files for displaying each webpage
+
+app.js is the main javascript file for the backend
+
+.env contains data used accross multiple files such as database information and authentication token settings
+
+
 How to host this site locally:
 -Download the code and MapInfo folders from the repo
 
